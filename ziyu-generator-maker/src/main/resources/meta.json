@@ -6,8 +6,9 @@
   "author": "ziyu",
   "createTime": "2023-11-22",
   "fileConfig": {
-    "inputRootPath": "E:/毕设项目/project/ziyu-generator/ziyu-generator-demo-projects/acm-template-pro",
+    "inputRootPath": ".source/acm-template-pro",
     "outputRootPath": "generated",
+    "sourceRootPath": "E:/毕设项目/project/ziyu-generator/ziyu-generator-demo-projects/acm-template-pro",
     "type": "dir",
     "files": [
       {
@@ -32,6 +33,13 @@
   },
   "modelConfig": {
     "models": [
+      {
+        "fieldName": "needGit",
+        "type": "boolean",
+        "description": "是否生成 .gitignore 文件",
+        "defaultValue": true,
+        "abbr": "p"
+      },
       {
         "fieldName": "loop",
         "type": "boolean",

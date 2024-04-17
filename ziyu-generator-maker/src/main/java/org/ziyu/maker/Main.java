@@ -2,14 +2,15 @@ package org.ziyu.maker;
 
 //import org.ziyu.maker.cli.CommandExecutor;
 
-public class Main {
-    public static void main(String[] args) {
-        //args = new String[]{"generate","-l","-a","-o"};
-        //args = new String[]{"list"};
-        //args = new String[]{"config"};
+import freemarker.template.TemplateException;
+import org.ziyu.maker.generator.MainGenerator;
 
-//        CommandExecutor commandExecutor = new CommandExecutor();
-//        commandExecutor.doExecute(args);
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
+        MainGenerator mainGenerator = new MainGenerator();
+        mainGenerator.doGenerate();
     }
 
 }

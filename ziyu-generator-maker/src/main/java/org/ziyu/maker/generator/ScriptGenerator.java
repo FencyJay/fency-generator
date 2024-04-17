@@ -9,8 +9,11 @@ import java.nio.file.attribute.PosixFilePermission;
 import java.nio.file.attribute.PosixFilePermissions;
 import java.util.Set;
 
+/**
+ * 生成一个generator文件，作为生成器生成代码的入口
+ */
 public class ScriptGenerator {
-    public static void doGenerator(String outputPath,String jarPath){
+    public static void doGenerate(String outputPath, String jarPath){
 
         StringBuilder sb = new StringBuilder();
         sb.append("#!/bin/bash").append("\n");
